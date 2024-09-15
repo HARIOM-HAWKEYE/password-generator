@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+   <section>
+       <div class="Heading">
+       <h2>Generate a <br> <span>Random Password</span></h2>
+       
+       </div>
+
+       <div class="PasswordBox">
+        <input type="text" name="" id="Password" placeholder="Password" readonly>
+        <i class="fa-solid fa-copy copy"></i>
+       </div>
+       <div class="rangeBox">
+        <div class="rangeShow">
+            <h6>Password length</h6>
+            <h6 class="length">12</h6>
+        </div>
+        <input type="range" name="" id="range"min=4 max="40" value="8">
+       </div>
+       <div class="optionRow">
+        <label for="uppercase"> Include UpperCase Letter(A-Z)</label>
+       
+        <div id="toggle-container">
+            <input type="checkbox" id="uppercase" class="toggle-input">
+            <label for="uppercase" class="toggle-label move"></label>
+        </div>
+        
+
+       </div>
+       <div class="optionRow">
+        <label for="lowercase"> Include LowerCase Letter(a-z)</label>
+       
+        <div id="toggle-container">
+            <input type="checkbox" id="lowercase" class="toggle-input">
+            <label for="lowercase" class="toggle-label move"></label>
+        </div>
+        
+
+       </div>
+       <div class="optionRow">
+        <label for="number"> Include Numbers (0-9)</label>
+       
+        <div id="toggle-container">
+            <input type="checkbox" id="number" class="toggle-input">
+            <label for="number" class="toggle-label move"></label>
+        </div>
+        
+
+       </div>
+       <div class="optionRow">
+        <label for="symbol"> Include Symbols (!-$)</label>
+       
+        <div id="toggle-container">
+            <input type="checkbox" id="symbol" class="toggle-input">
+            <label for="symbol" class="toggle-label move"></label>
+        </div>
+        
+
+       </div>
+       
+       <div class="buttonContainer">
+        <h2>Generate Password</h2>
+       </div>
+
+   </section>
+   <script src="./index.js"></script>
+</body>
+</html>
